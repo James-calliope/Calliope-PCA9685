@@ -1,6 +1,6 @@
 {
     "name": "Pca9685舵机驱动",
-    "version": "0.0.5",
+    "version": "1.0",
     "description": "PCA9685舵机驱动，可控制16路舵机",
     "dependencies": {
         "core": "*",
