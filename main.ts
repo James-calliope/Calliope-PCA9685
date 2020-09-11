@@ -9,7 +9,7 @@
  */
 
 //% weight=5 color=#0fbc11 icon="\uf1b6"
-namespace Servo {
+namespace PCA9685舵机驱动 {
     let PCA9685_ADDRESS = 0x40
     const MODE1 = 0x00
     const PRESCALE = 0xFE
