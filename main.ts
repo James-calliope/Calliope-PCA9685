@@ -19,37 +19,37 @@ namespace Servo {
 
     // List of servos for the servo block to use.
     export enum Servos {
-        //% block="Servo 0"
+        //% block="舵机0"
         Servo0 = 0,
-        //% block="Servo 1"
+        //% block="舵机1"
         Servo1 = 1,
-        //% block="Servo 2"
+        //% block="舵机2"
         Servo2 = 2,
-        //% block="Servo 3"
+        //% block="舵机3"
         Servo3 = 3,
-        //% block="Servo 4"
+        //% block="舵机4"
         Servo4 = 4,
-        //% block="Servo 5"
+        //% block="舵机5"
         Servo5 = 5,
-        //% block="Servo 6"
+        //% block="舵机6"
         Servo6 = 6,
-        //% block="Servo 7"
+        //% block="舵机7"
         Servo7 = 7,
-        //% block="Servo 8"
+        //% block="舵机8"
         Servo8 = 8,
-        //% block="Servo 9"
+        //% block="舵机9"
         Servo9 = 9,
-        //% block="Servo 10"
+        //% block="舵机10"
         Servo10 = 10,
-        //% block="Servo 11"
+        //% block="舵机11"
         Servo11 = 11,
-        //% block="Servo 12"
+        //% block="舵机12"
         Servo12 = 12,
-        //% block="Servo 13"
+        //% block="舵机13"
         Servo13 = 13,
-        //% block="Servo 14"
+        //% block="舵机14"
         Servo14 = 14,
-        //% block="Servo 15"
+        //% block="舵机15"
         Servo15 = 15
     }
 
@@ -109,7 +109,7 @@ namespace Servo {
 	 * Servo Winkel setzen
 	 * @param degree [0-180] degree of servo; eg: 90, 0, 180
 	*/
-    //% blockId=Servo block="setze Winkel von |%channel| auf |%degree=protractorPicker| °"
+    //% blockId=Servo block="控制舵机： |%channel| 旋转 |%degree=protractorPicker| 度"
     //% weight=85
     //% channel.fieldEditor="gridpicker"
     //% channel.fieldOptions.width=220
@@ -129,7 +129,7 @@ namespace Servo {
 	 * Servo Puls setzen
 	 * @param pulse [500-2500] pulse of servo; eg: 1500, 500, 2500
 	*/
-    //% blockId=ServoPulse block="setze Puls von |%channel| auf |%pulse| μs"
+    //% blockId=ServoPulse block="控制舵机： |%channel| 旋转 |%pulse| 毫秒"
     //% weight=85
     //% pulse.min=500 pulse.max=2500
     //% channel.fieldEditor="gridpicker"
@@ -144,7 +144,7 @@ namespace Servo {
         setPwm(channel, 0, value);
     }
 
-    //% blockId=SetI2cAdress block="setze I2C Adresse von 0x40 (default) auf 0x7F (Grove)"
+    //% blockId=SetI2cAdress block="重新设置舵机驱动板的IIC地址"
     export function SetI2cAdress(): void {
          PCA9685_ADDRESS = 0x7F
     }
