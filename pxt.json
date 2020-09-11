@@ -1,7 +1,7 @@
 {
-    "name": "pxt-pca9685",
+    "name": "Pca9685舵机驱动",
     "version": "0.0.5",
-    "description": "Easy to use ServoDriver for the pca9685",
+    "description": "PCA9685舵机驱动，可控制16路舵机",
     "dependencies": {
         "core": "*",
         "radio": "*"
